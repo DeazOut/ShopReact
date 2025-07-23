@@ -23,6 +23,38 @@ class App extends React.Component {
           desc: 'Банан из Судана',
           categore: 'fruits',
           price: '55'
+        },
+        {
+          id: 3,
+          title: 'Груша',
+          img: './pngimg.com - pear_PNG3458.png',
+          desc: 'Груша',
+          categore: 'fruits',
+          price: '45'
+        },
+        {
+          id: 4,
+          title: 'Абрикос',
+          img: './apricot.jpg',
+          desc: 'Абрикос',
+          categore: 'fruits',
+          price: '67'
+        },
+        {
+          id: 5,
+          title: 'Персик',
+          img: './pngimg.com - peach_PNG4834.png',
+          desc: 'Персик',
+          categore: 'fruits',
+          price: '66'
+        },
+        {
+          id: 6,
+          title: 'Персик',
+          img: './pngimg.com - peach_PNG4834.png',
+          desc: 'Персик менее свежий',
+          categore: 'fruits',
+          price: '63'
         }
       ]
     }
