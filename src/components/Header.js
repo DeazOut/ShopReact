@@ -1,5 +1,20 @@
 import React, { useState } from 'react'
 import { FaCartShopping } from "react-icons/fa6";
+import Order from './Order';
+
+const showOrders = (props) => {
+  return ( <div>{props.orders.map(el => (
+                    <Order key={el.id} item={el}/>
+                  ))}</div>) 
+}
+
+const showNothing = () => {
+  return (
+    <div className='empty'>
+      <h2>Корзина пустая</h2>
+    </div>
+  )
+}
 
 export default function Header(props) {
   let [cartOpen, setCartOpen] = useState(false);
@@ -13,12 +28,10 @@ export default function Header(props) {
               <li>Контакты</li>
               <li>Кабинет</li>
             </ul>
-
+ 
             {cartOpen && (
               <div className='shop-cart'> 
-                  {props.orders.map(el => {
-                    <Order></Order>
-                  })}
+                  {props.orders.lenght > 0 ? showOrders(props) : showNothing()}                 
               </div>
             )}
 

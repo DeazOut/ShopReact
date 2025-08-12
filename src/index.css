@@ -63,7 +63,7 @@ header .presentation::after{
     font-weight: 900;
     font-size: 45px;
     position: absolute;
-    left: 200px;
+    left: 280px;
     bottom: 150px;
 }
 header .presentation::before {
@@ -73,7 +73,7 @@ header .presentation::before {
     font-weight: 900;
     font-size: 15px;
     position: absolute;
-    left: 200px;
+    left: 280px;
     bottom: 120px;
 }
 
@@ -148,17 +148,54 @@ header .shop-cart {
     top: 30px;
     right: 0;
     width: 100px;
-    min-width: 100px;
-    height: 100px;
+    min-width: 200px;
     background: #f3f3f3;
     -webkit-box-shadow: -11px 13px 8px -7px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: -11px 13px 8px -7px rgba(34, 60, 80, 0.2);
     box-shadow: -11px 13px 8px -7px rgba(34, 60, 80, 0.2);
     z-index: 9999;
+    padding: 20px;
+    padding-bottom: 0;
+    border-radius: 5px;
+}
+
+header .shop-cart .item {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+header .shop-cart .item img {
+    width: 60px;
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+header .shop-cart .empty h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+header .shop-cart .item h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+header .shop-cart .item p{
+    color: #797979;
+    font-weight: 600;
+}
+
+header .shop-cart .item .delete-icon {
+    color: #ff0000;
+    float: right;
+    position: relative;
+    top: -20px;
+    cursor: pointer;
 }
 
 footer {
     text-align: center;
     margin-top: 100px;
 }
-

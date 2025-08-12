@@ -51,7 +51,7 @@ class App extends React.Component {
         },
         {
           id: 6,
-          title: 'Персик',
+          title: 'Персик 2',
           img: './pngimg.com - peach_PNG4834.png',
           desc: 'Персик менее свежий',
           categore: 'fruits',
@@ -72,7 +72,13 @@ class App extends React.Component {
   }
   
   addToOrder(item) {
-    this.setState({orders: [...this.state.orders, item] })
+    let isInArray = false
+    this.state.orders.forEach(el => {
+      if(el.id == item.id)
+        isInArray = true
+    }) 
+    if (!isInArray)
+      this.setState({orders: [...this.state.orders, item] })
   }
 }
 
